@@ -6,12 +6,12 @@
   scroll-behavior: smooth;
   list-style: none;
   /*font-family: monospace;*/
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* global variables*/
 :root {
-
   --dark-navy: #020c1b;
   --navy: #0a192f;
   --light-navy: #112240;
@@ -26,10 +26,7 @@
   --green-tint: rgba(100, 255, 218, 0.1);
   --pink: #f57dff;
   --blue: #57cbff;
-
-
 }
-
 
 header {
   position: fixed;
@@ -46,7 +43,6 @@ header {
   padding: 0.5rem 1.5rem;
   border-radius: 3rem;
   z-index: 1000;
-  
 }
 
 .logo {
@@ -63,7 +59,7 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 2rem; 
+  gap: 2rem;
 }
 
 li a {
@@ -73,19 +69,19 @@ li a {
 }
 
 li a::before {
-  position: absolute; 
-  content: '';
+  position: absolute;
+  content: "";
   width: 0;
   left: 0;
   height: 4px;
   top: 25px;
   border-radius: 1rem;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(to right, rgb(0,157,255),rgb(237, 46, 135) )
+  background: linear-gradient(to right, rgb(0, 157, 255), rgb(237, 46, 135));
 }
 
 li a:hover::before {
-  width: 100%;;
+  width: 100%;
 }
 
 .resume-btn {
@@ -98,13 +94,11 @@ li a:hover::before {
   cursor: pointer;
   text-wrap: none;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(to right, rgb(0, 174, 255),rgb(237, 46, 135) )
-
-
+  background: linear-gradient(to right, rgb(0, 174, 255), rgb(237, 46, 135));
 }
 
 .resume-btn:hover {
-  background: linear-gradient(to right, rgb(237, 46, 135), rgb(0,157,255) );
+  background: linear-gradient(to right, rgb(237, 46, 135), rgb(0, 157, 255));
   transform: scale(1.03);
 }
 
@@ -122,7 +116,6 @@ section {
   position: relative;
 }
 
-
 .about {
   display: flex;
   align-items: center;
@@ -130,7 +123,7 @@ section {
 }
 
 .about .about-container {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10rem;
@@ -150,13 +143,11 @@ section {
   gap: 1.5rem;
 }
 
-
 .info-box h3 {
   font-size: 1.8rem;
   font-weight: 500;
   opacity: 0.8;
 }
-
 
 .info-box h1 {
   font-size: 4rem;
@@ -164,23 +155,21 @@ section {
 }
 
 .info-box span {
-  background: linear-gradient(to right, rgb(237, 46, 135), rgb(0,157,255) );
+  background: linear-gradient(to right, rgb(237, 46, 135), rgb(0, 157, 255));
   background-clip: text;
   color: transparent;
   font-size: 2rem;
-
 }
 
 .btn-group {
   display: flex;
   gap: 1rem;
-  
 }
 
 .btn {
   border-radius: 3rem;
   border: 2px solid black;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.2rem;
   cursor: pointer;
   font-weight: 480;
   text-wrap: nowrap; /* prevents from wrapping this way text aligns*/
@@ -200,7 +189,6 @@ section {
 .socials i {
   font-size: 2.5rem;
   cursor: pointer; /* makes item clickable */
-
 }
 
 /* Experience Section */
@@ -222,7 +210,6 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-
 }
 
 .grid-card {
@@ -235,39 +222,31 @@ section {
   justify-content: left;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-
 }
 
 .grid-card:hover {
   transform: scale(1.1);
   background-color: black;
   color: white;
-  
 }
 
 .grid-card i {
   font-size: 1.5rem; /* make icons larger*/
   margin-bottom: 1rem;
-
 }
 
 .grid-card span {
   font-size: 1.5rem;
   font-weight: 600;
-  background: linear-gradient(to right, rgb(237, 46, 135), rgb(0,157,255) );
+  background: linear-gradient(to right, rgb(237, 46, 135), rgb(0, 157, 255));
   background-clip: text;
   color: transparent;
 }
 
-
 #company-name {
   font-size: 1.2rem;
   font-weight: 500;
-  
 }
-
-
-
 
 /* Projects Section */
 
@@ -295,7 +274,6 @@ section {
   transform: translateY(-5px);
   background-color: black;
   color: white;
-
 }
 
 .project-card:hover .btn {
@@ -317,13 +295,10 @@ section {
 .project-card h3 {
   font-size: 2rem;
   font-weight: 500;
-  background: linear-gradient(to right, rgb(237, 46, 135), rgb(0,157,255) );
+  background: linear-gradient(to right, rgb(237, 46, 135), rgb(0, 157, 255));
   background-clip: text;
   color: transparent;
-
 }
-
-
 
 /* Scroll bar styling */
 ::-webkit-scrollbar {
@@ -338,14 +313,11 @@ section {
   background-color: rgb(165, 171, 180);
 }
 
-
 /* Makes it Responsive */
-@media(max-width: 1200px) {
-
+@media (max-width: 1200px) {
   header {
     padding: 1rem 2rem;
     gap: 2rem;
-    
   }
 
   .about .about-container {
@@ -355,15 +327,11 @@ section {
   .experience-info {
     flex-direction: column;
   }
-
-  
-
 }
 
-
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   header {
-    gap: 1rem; 
+    gap: 1rem;
     padding: 1rem 1rem;
   }
   header .logo {
@@ -381,13 +349,9 @@ section {
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
-
-
-
-
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   header #menu-bar-icon {
     display: block;
     cursor: pointer;
@@ -401,6 +365,8 @@ section {
     position: absolute;
     top: 100%;
     margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
     color: white;
     display: flex;
     flex-direction: column;
@@ -413,7 +379,6 @@ section {
   .nav-links li {
     margin-top: 1.4rem;
     padding: 1rem;
-    
   }
 
   .nav-links.active {
@@ -421,7 +386,7 @@ section {
   }
 
   header {
-    padding: .5rem 4rem;
+    padding: 0.5rem 4rem;
     gap: 8rem;
   }
 
