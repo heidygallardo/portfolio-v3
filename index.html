@@ -3,40 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heidy Gallardo Minimalist Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
 
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/0d366321af.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">Heidy.</div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <section class="hero">
-        <img src="images/heidy-gallardo-profile-picture.jpg" alt="Profile Picture" class="profile-img" />
-        <h1>Hi! I’m Heidy Gallardo 👋</h1>
-        <h2>Developer, Maker and Designer</h2>
-        <p>
-          - based in Texas.
-        </p>
-        <div class="cta-buttons">
-          <a href="#" class="btn">Connect with me</a>
-          <a href="#" class="btn resume">My resume</a>
-        </div>
-      </section>
+    <header class="header">
+      <a href="#" class="logo"><span>heidy.dev</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <i id="menu-bar-icon" class="fa-solid fa-bars"></i>
+      <button class="resume-btn">Resume</button>
     </header>
 
-    <section class="about">
-      <h2>Introduction</h2>
-      <p>About me content...</p>
+    <section id="about" class="about">
+      <div class="about-container">
+        <img
+          id="profile-picture"
+          src="images/heidy-gallardo-profile-picture.jpg"
+          alt="Heidy's profile picture"
+        />
+
+        <div class="info-box">
+          <div class="text">
+            <h3>Hi, I'm</h3>
+            <h1>Heidy Gallardo</h1>
+            <span>Web Developer</span>
+          </div>
+
+          <div class="btn-group">
+            <div class="btn">Download CV</div>
+            <div class="btn">Contact</div>
+          </div>
+
+          <div class="socials">
+            <a target="_blank" href="https://github.com/heidygallardo">
+              <i class="fa-brands fa-github"></i
+            ></a>
+
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/heidy-gallardo"
+            >
+              <i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section id="experience" class="experience">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="experience-info">
+        <!-- Cards Layout -->
+        <div class="grid-card">
+          <i class="fa-solid fa-code"></i>
+          <span>Tech Fellow</span>
+          <span id="company-name"> @ CodePath</span>
+          <h3>May 2024 - Current</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="grid-card">
+          <i class="fa-solid fa-code"></i>
+          <span>Web Developer</span>
+          <span id="company-name">
+            @ The University of Texas Rio Grande Valley</span
+          >
+          <h3>May 2023 - December 2023</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="grid-card">
+          <i class="fa-solid fa-users-gear"></i>
+          <span>Assistant Manager </span>
+          <span id="company-name">@ Gonzalez Concrete Works LLC</span>
+          <h3>Jan 2022 - Current</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/binfiesta-project.jpg" alt="" />
+          <h3>We R Cooked</h3>
+          <p>Project description here.</p>
+          <div class="btn-group">
+            <div class="btn">Live Demo</div>
+            <div class="btn">GitHub Repo</div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/binfiesta-project.jpg" alt="" />
+          <h3>Bin Fiesta</h3>
+          <p>Project description here.</p>
+          <div class="btn-group">
+            <div class="btn">Live Demo</div>
+            <div class="btn">GitHub Repo</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/binfiesta-project.jpg" alt="" />
+          <h3>Bin Fiesta</h3>
+          <p>Project description here.</p>
+          <div class="btn-group">
+            <div class="btn">Live Demo</div>
+            <div class="btn">GitHub Repo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="input-box">
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
