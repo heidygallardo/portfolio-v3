@@ -337,3 +337,43 @@ section {
 ::-webkit-scrollbar-thumb {
   background-color: rgb(165, 171, 180);
 }
+
+
+/* Makes it Responsive */
+@media(max-width: 1200px) {
+
+  header {
+    padding: 1rem 2rem;
+    gap: 2rem;
+    
+  }
+
+  .about .about-container {
+    gap: 3rem;
+  }
+
+  .experience-info {
+    flex-direction: column;
+  }
+
+  .input-box input i {
+    font-size: 2.5rem;
+
+  }
+
+}
+
+
+@media(max-width: 768px) {
+  header {
+    gap: 1rem; 
+    padding: 1rem 1rem;
+  }
+  header .logo {
+    font-size: 1rem;
+  }
+
+  header .resume-btn {
+    display: none;
+  }
+}
