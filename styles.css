@@ -189,6 +189,7 @@ section {
 .socials i {
   font-size: 2.5rem;
   cursor: pointer; /* makes item clickable */
+  color: #020c1b;
 }
 
 /* Experience Section */
@@ -351,6 +352,8 @@ section {
   }
 }
 
+
+/* Mobile View */
 @media (max-width: 600px) {
   header #menu-bar-icon {
     display: block;
