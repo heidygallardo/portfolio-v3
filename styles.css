@@ -79,7 +79,7 @@ li a:hover::before {
   width: 100%;
 }
 
-.resume-btn {
+.resume-btn, #submit-btn {
   padding: 0.8rem 1.5rem;
   border-radius: 2rem;
   border: none;
@@ -92,7 +92,7 @@ li a:hover::before {
   background: var(--to-right-gradient);
 }
 
-.resume-btn:hover {
+.resume-btn:hover, #submit-btn:hover {
   background: var(--flipped-gradient);
   transform: scale(1.03);
 }
@@ -248,13 +248,15 @@ section {
   font-weight: 500;
 }
 
-#job-list li{
-  list-style:inside;
-  padding: .4rem;
+#job-list li {
+  list-style: inside;
+  padding: 0.4rem;
 }
 
 /* Projects Section */
-
+.projects {
+  background-color: #f4f4f4; /* section color */
+}
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -308,6 +310,45 @@ section {
 .project-card p {
   font-weight: 300;
 }
+
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.input-box {
+
+  width: 100%;
+  max-width: 25rem;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 3rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#submit-btn {
+  color: white;
+}
+
 
 /* Scroll bar styling */
 ::-webkit-scrollbar {
