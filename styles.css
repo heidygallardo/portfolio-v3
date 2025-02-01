@@ -254,9 +254,7 @@ section {
 }
 
 /* Projects Section */
-.projects {
-  background-color: #f4f4f4; /* section color */
-}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -275,6 +273,7 @@ section {
   border-radius: 3rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  background-color: white;
 }
 
 .project-card:hover {
