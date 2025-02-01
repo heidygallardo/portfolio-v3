@@ -410,21 +410,19 @@ textarea {
 
 /* Mobile View */
 @media (max-width: 600px) {
- 
   header {
-    padding: .6rem;
+    padding: 0.6rem;
+
   }
   header .logo {
     font-size: 1.2rem;
-    padding-left: .9rem;
-
+    padding-left: 0.9rem;
   }
   header #menu-bar-icon {
     display: block;
     cursor: pointer;
-    font-size: 1.6rem;
-    padding-left: 15rem;
-    
+    font-size: 2rem;
+    padding-left: 10rem;
   }
 
   header .resume-btn {
@@ -470,8 +468,6 @@ textarea {
   .nav-links.active {
     display: block;
   }
-
-
 
   .about-container img {
     width: 80vw;
