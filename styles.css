@@ -5,27 +5,22 @@
   text-decoration: none;
   scroll-behavior: smooth;
   list-style: none;
-  /*font-family: monospace;*/
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* global variables*/
 :root {
-  --dark-navy: #020c1b;
-  --navy: #0a192f;
-  --light-navy: #112240;
-  --lightest-navy: #233554;
-  --navy-shadow: rgba(2, 12, 27, 0.7);
-  --dark-slate: #495670;
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
-  --lightest-slate: #ccd6f6;
-  --white: #e6f1ff;
-  --green: #64ffda;
-  --green-tint: rgba(100, 255, 218, 0.1);
-  --pink: #f57dff;
-  --blue: #57cbff;
+  --to-right-gradient: linear-gradient(
+    to right,
+    rgb(237, 46, 135),
+    rgb(0, 157, 255)
+  );
+  --flipped-gradient: linear-gradient(
+    to right,
+    rgb(0, 157, 255),
+    rgb(237, 46, 135)
+  );
 }
 
 header {
@@ -77,7 +72,7 @@ li a::before {
   top: 25px;
   border-radius: 1rem;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(to right, rgb(0, 157, 255), rgb(237, 46, 135));
+  background: var(--to-right-gradient);
 }
 
 li a:hover::before {
@@ -94,11 +89,11 @@ li a:hover::before {
   cursor: pointer;
   text-wrap: none;
   transition: 0.3s ease-in-out;
-  background: linear-gradient(to right, rgb(0, 174, 255), rgb(237, 46, 135));
+  background: var(--to-right-gradient);
 }
 
 .resume-btn:hover {
-  background: linear-gradient(to right, rgb(237, 46, 135), rgb(0, 157, 255));
+  background: var(--flipped-gradient);
   transform: scale(1.03);
 }
 
@@ -155,7 +150,7 @@ section {
 }
 
 .info-box span {
-  background: linear-gradient(to right, rgb(237, 46, 135), rgb(0, 157, 255));
+  background: var(--to-right-gradient);
   background-clip: text;
   color: transparent;
   font-size: 2rem;
@@ -243,7 +238,7 @@ section {
 .grid-card span {
   font-size: 1.5rem;
   font-weight: 600;
-  background: linear-gradient(to right, rgb(237, 46, 135), rgb(0, 157, 255));
+  background: var(--to-right-gradient);
   background-clip: text;
   color: transparent;
 }
@@ -300,7 +295,7 @@ section {
 .project-card h3 {
   font-size: 2rem;
   font-weight: 500;
-  background: linear-gradient(to right, rgb(237, 46, 135), rgb(0, 157, 255));
+  background: var(--to-right-gradient);
   background-clip: text;
   color: transparent;
 }
@@ -355,7 +350,6 @@ section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
 
 /* Mobile View */
 @media (max-width: 600px) {
