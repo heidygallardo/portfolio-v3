@@ -53,9 +53,8 @@ header {
 }
 
 .nav-links #resume {
-  display:none;
+  display: none;
 }
-
 
 .nav-links {
   display: flex;
@@ -84,7 +83,8 @@ li a:hover::before {
   width: 100%;
 }
 
-.resume-btn, #submit-btn {
+.resume-btn,
+#submit-btn {
   padding: 0.8rem 1.5rem;
   border-radius: 2rem;
   border: none;
@@ -101,7 +101,8 @@ li a:hover::before {
   color: white;
 }
 
-.resume-btn:hover, #submit-btn:hover {
+.resume-btn:hover,
+#submit-btn:hover {
   background: var(--flipped-gradient);
   transform: scale(1.03);
 }
@@ -329,7 +330,6 @@ section {
 }
 
 .input-box {
-
   width: 100%;
   max-width: 25rem;
   padding: 2rem;
@@ -356,7 +356,6 @@ textarea {
 #submit-btn {
   color: white;
 }
-
 
 /* Scroll bar styling */
 ::-webkit-scrollbar {
@@ -411,15 +410,22 @@ textarea {
 
 /* Mobile View */
 @media (max-width: 600px) {
+ 
+
+  header .logo {
+    font-size: 1.2rem;
+
+  }
   header #menu-bar-icon {
     display: block;
     cursor: pointer;
+    font-size: 1.6rem;
+    
   }
 
   header .resume-btn {
     display: none;
   }
-
 
   .info-box h1 {
     font-size: 3rem;
@@ -451,7 +457,6 @@ textarea {
   .nav-links #resume {
     display: inline-block;
   }
-  
 
   .nav-links li {
     margin-top: 1.4rem;
@@ -462,14 +467,7 @@ textarea {
     display: block;
   }
 
-  header {
-    padding: 0.5rem 4rem;
-    gap: 8rem;
-  }
 
-  header .logo {
-    font-size: 1.5rem;
-  }
 
   .about-container img {
     width: 80vw;
