@@ -52,6 +52,11 @@ header {
   transform: scale(1.06);
 }
 
+.nav-links #resume {
+  display:none;
+}
+
+
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -90,6 +95,10 @@ li a:hover::before {
   text-wrap: none;
   transition: 0.3s ease-in-out;
   background: var(--to-right-gradient);
+}
+
+.resume-btn a {
+  color: white;
 }
 
 .resume-btn:hover, #submit-btn:hover {
@@ -169,6 +178,7 @@ section {
   font-weight: 480;
   text-wrap: nowrap; /* prevents from wrapping this way text aligns*/
   transition: 0.2s ease-in-out;
+  color: black;
 }
 
 .btn:hover {
@@ -254,7 +264,6 @@ section {
 }
 
 /* Projects Section */
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -388,7 +397,7 @@ textarea {
   }
 
   header .resume-btn {
-    display: none;
+    display: inline-block;
   }
 
   .about-container {
@@ -406,6 +415,11 @@ textarea {
     display: block;
     cursor: pointer;
   }
+
+  header .resume-btn {
+    display: none;
+  }
+
 
   .info-box h1 {
     font-size: 3rem;
@@ -433,6 +447,11 @@ textarea {
     border-radius: 3rem;
     display: none;
   }
+
+  .nav-links #resume {
+    display: inline-block;
+  }
+  
 
   .nav-links li {
     margin-top: 1.4rem;
