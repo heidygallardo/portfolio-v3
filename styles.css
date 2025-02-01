@@ -248,6 +248,11 @@ section {
   font-weight: 500;
 }
 
+#job-list li{
+  list-style:inside;
+  padding: .4rem;
+}
+
 /* Projects Section */
 
 .projects-grid {
