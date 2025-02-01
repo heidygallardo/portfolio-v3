@@ -288,7 +288,7 @@ section {
 }
 
 .project-card img {
-  width: 20vw;
+  width: 22vw;
   border-radius: 1rem;
 }
 
@@ -298,6 +298,10 @@ section {
   background: var(--to-right-gradient);
   background-clip: text;
   color: transparent;
+}
+
+.project-card p {
+  font-weight: 580;
 }
 
 /* Scroll bar styling */
